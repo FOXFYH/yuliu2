@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>probe2</title>
+<script>
+var shared = localStorage.getItem('__probe_shared__');
+var y1 = localStorage.getItem('__probe_y1__');
+var y2_old = localStorage.getItem('__probe_y2__');
+localStorage.setItem('__probe_y2__', 'value2');
+document.write('YULIU2_READ shared=' + shared + ' y1=' + y1 + ' y2_old=' + y2_old +
+  ' all=' + JSON.stringify(Object.keys(localStorage).sort()));
+</script>
